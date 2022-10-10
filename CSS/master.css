@@ -14,6 +14,7 @@
   --border-raduis: 6px;
   --col-white: white;
   --transition: 0.3s;
+  --grey-color: #888;
 }
 html {
   box-sizing: border-box;
@@ -141,3 +142,78 @@ body {
 }
 
 /* End Sidebar */
+
+/* Start Head */
+
+.content {
+  width: 100vw;
+}
+
+.content .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: var(--col-white);
+}
+.content .head form .input {
+  position: relative;
+}
+.content .head form .input::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f002";
+  font-weight: 900;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: var(--grey-color);
+  z-index: 2;
+}
+.content .head form input {
+  width: 160px;
+  height: 40px;
+  border: 1px solid #ccc;
+  padding-left: 30px;
+  border-radius: var(--border-raduis);
+  position: relative;
+  transition: var(--transition);
+}
+.content .head form input::placeholder {
+  font-weight: normal;
+  font-size: 14px;
+}
+.content .head form input:focus::placeholder {
+  opacity: 0;
+}
+.content .head form input:focus {
+  width: 250px;
+}
+.content .head .alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.content .head .alert span {
+  position: relative;
+}
+.content .head .alert span::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+}
+.content .head .alert i {
+  position: relative;
+}
+.content .head .alert img {
+  width: 40px;
+}
+
+/* End Head */
