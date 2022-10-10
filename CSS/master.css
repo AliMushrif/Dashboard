@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+  --webkit-box-sizing: border-box;
+  --moz-box-sizing: border-box;
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+*:focus {
+  outline: none;
+}
+:root {
+  --border-raduis: 6px;
+  --col-white: white;
+  --transition: 0.3s;
+}
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.page {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f1f5f9;
+}
+/* Start Sidebar */
+
+.sidebar {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 40px;
+  box-shadow: 0 0 10px #ddd;
+  z-index: 2;
+}
+.sidebar h3 {
+  font-size: 22px;
+  font-weight: bold;
+  display: block;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 50px;
+  position: relative;
+  font-size: 20px;
+}
+.sidebar h3::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  border: 3px solid white;
+  border-radius: 50%;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.sidebar h3::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 40%;
+  height: 2px;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sidebar ul li {
+  padding: 10px 70px 10px 10px;
+  border-radius: var(--border-raduis);
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.sidebar ul li:hover {
+  background-color: #f6f6f6;
+  transition: var(--transition);
+}
+.sidebar ul .active {
+  background-color: #f6f6f6;
+}
+.sidebar ul li a i {
+  color: black;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.sidebar ul li a span {
+  font-size: 14px;
+  color: black;
+}
+@media (max-width: 767px) {
+  .sidebar {
+    padding: 10px 5px;
+  }
+  .sidebar h3 {
+    font-size: 13px;
+    margin: 0 0 15px;
+  }
+  .sidebar h3::before {
+    display: none;
+  }
+  .sidebar h3::after {
+    display: none;
+  }
+  .sidebar ul {
+    width: fit-content;
+  }
+  .sidebar ul li {
+    padding: 10px;
+    border-radius: var(--border-raduis);
+    margin-bottom: 5px;
+    cursor: pointer;
+    width: fit-content;
+  }
+  .sidebar ul li a {
+    display: block;
+    width: fit-content;
+    margin: auto;
+  }
+  .sidebar ul li a i {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    margin: auto;
+  }
+  .sidebar ul li a span {
+    display: none;
+  }
+}
+
+/* End Sidebar */
