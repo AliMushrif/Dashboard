@@ -167,9 +167,14 @@ body {
 /* Start Head */
 
 .content {
-  width: 100vw;
+  width: calc(100vw - 250px);
+  flex: 1;
 }
-
+@media (max-width: 767px) {
+  .content {
+    width: calc(100vw - 50px);
+  }
+}
 .content .head {
   display: flex;
   justify-content: space-between;
@@ -194,9 +199,8 @@ body {
 }
 .content .head form input {
   width: 160px;
-  height: 40px;
   border: 1px solid #ccc;
-  padding-left: 30px;
+  padding: 8px 0 8px 30px;
   border-radius: var(--border-raduis);
   position: relative;
   transition: var(--transition);
@@ -249,7 +253,7 @@ body {
   font-weight: bold;
   width: fit-content;
   position: relative;
-  margin: 20px 20px 40px;
+  margin: 10px;
 }
 .content-container > h1::before {
   content: "";
@@ -279,7 +283,14 @@ body {
   gap: 20px;
   padding: 15px;
 }
-
+@media (max-width: 767px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 15px;
+  }
+}
 .wrapper .box {
   background-color: var(--white-color);
   border-radius: 10px;
@@ -295,10 +306,14 @@ body {
   background-color: #eee;
   padding: 15px;
 }
-.wrapper .welcome .intro .text {
-}
+
 .wrapper .welcome .intro > img {
   width: 200px;
+}
+@media (max-width: 767px) {
+  .wrapper .welcome .intro > img {
+    display: none;
+  }
 }
 .wrapper .welcome .rest {
   display: flex;
@@ -311,7 +326,7 @@ body {
   border: 5px solid var(--white-color);
   position: relative;
   top: -30px;
-  left: 10%;
+  right: -70%;
 }
 .wrapper .welcome .rest .text {
   display: flex;
@@ -393,3 +408,169 @@ body {
 }
 
 /* End Quick Draft */
+
+/* Start Yearly Targets */
+
+.yearly-targets {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--white-color);
+}
+.yearly-targets h2 {
+}
+.yearly-targets p {
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+.yearly-targets .sub-box {
+  display: flex;
+}
+.yearly-targets .sub-box .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98px;
+  height: 80px;
+  margin-right: 15px;
+  border-radius: var(--border-raduis);
+}
+.yearly-targets .a .icon {
+  background-color: rgb(0 117 255 / 20%);
+  color: var(--blue-color);
+}
+.yearly-targets .b .icon {
+  background-color: rgb(245 158 11 / 20%);
+  color: var(--orange-color);
+}
+.yearly-targets .c .icon {
+  background-color: rgb(34 197 94 / 20%);
+  color: var(--green-color);
+}
+.yearly-targets .sub-box .target {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.yearly-targets .sub-box .target h3 {
+  margin-bottom: 10px;
+}
+.yearly-targets .sub-box .target > div {
+  width: 100%;
+  height: 4px;
+  margin-bottom: 5px;
+}
+.yearly-targets .sub-box .target > div {
+  position: relative;
+}
+.yearly-targets .a .target > div {
+  background-color: rgb(0 117 255 / 20%);
+}
+.yearly-targets .b .target > div {
+  background-color: rgb(245 158 11 / 20%);
+}
+.yearly-targets .c .target > div {
+  background-color: rgb(34 197 94 / 20%);
+}
+.yearly-targets .sub-box .target > div span {
+  height: 4px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.yearly-targets .sub-box .target > div span::before {
+  content: attr(prog);
+  position: absolute;
+  width: 34px;
+  height: 22px;
+  right: -17px;
+  top: -32px;
+  color: var(--white-color);
+  border-radius: var(--border-raduis);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  z-index: 1;
+}
+.yearly-targets .a .target > div span::before {
+  background-color: var(--blue-color);
+}
+.yearly-targets .b .target > div span::before {
+  background-color: var(--orange-color);
+}
+.yearly-targets .c .target > div span::before {
+  background-color: var(--green-color);
+}
+.yearly-targets .sub-box .target > div span::after {
+  content: "";
+  border: 10px solid;
+  position: absolute;
+  right: -10px;
+  top: -16px;
+}
+.yearly-targets .a .target > div span::after {
+  border-color: var(--blue-color) transparent transparent transparent;
+}
+.yearly-targets .b .target > div span::after {
+  border-color: var(--orange-color) transparent transparent transparent;
+}
+.yearly-targets .c .target > div span::after {
+  border-color: var(--green-color) transparent transparent transparent;
+}
+
+.yearly-targets .a .target > div span {
+  background-color: var(--blue-color);
+}
+.yearly-targets .b .target > div span {
+  background-color: var(--orange-color);
+}
+.yearly-targets .c .target > div span {
+  background-color: var(--green-color);
+}
+
+/* End Yearly Targets */
+
+/* Start Tickets Statistics */
+.tickets-statistics {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.tickets-statistics p {
+  color: var(--text-color);
+}
+.tickets-statistics .grid-holder {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+.tickets-statistics .grid-holder .sub-box {
+  border: 1px solid #ccc;
+  border-radius: var(--border-raduis);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.tickets-statistics .grid-holder .a i {
+  color: var(--orange-color);
+}
+.tickets-statistics .grid-holder .b i {
+  color: var(--blue-color);
+}
+.tickets-statistics .grid-holder .c i {
+  color: var(--green-color);
+}
+.tickets-statistics .grid-holder .d i {
+  color: var(--red-color);
+}
+.tickets-statistics .grid-holder .sub-box h3 {
+  margin: 10px 0 5px;
+}
+
+/* End Tickets Statistics */
