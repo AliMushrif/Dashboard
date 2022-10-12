@@ -710,3 +710,52 @@ body {
 }
 
 /* End Top Search Items */
+
+/* Start Latest Uploads */
+
+.latest-uploads {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+.latest-uploads .sub-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.latest-uploads .sub-box:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.latest-uploads h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.latest-uploads .intro {
+  display: flex;
+  gap: 15px;
+}
+.latest-uploads .intro > img {
+  height: 40px;
+}
+.latest-uploads .intro .text h4 {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.latest-uploads .intro .text p {
+  font-size: 14px;
+  color: var(--text-color);
+}
+.latest-uploads .sub-box > span {
+  background-color: #eee;
+  border-radius: var(--border-raduis);
+  font-size: 14px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 8px;
+}
+
+/* End Latest Uploads */
