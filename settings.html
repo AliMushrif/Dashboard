@@ -117,6 +117,11 @@
             <textarea placeholder="Close Manager Content"></textarea>
           </div>
           <!-- End Site Control -->
+          <!-- Start General Info -->
+          <div class="box general-info">
+            <h2>General Info</h2>
+          </div>
+          <!-- End General Info -->
           <div class="box">
             <h2>Site Control</h2>
           </div>
@@ -126,12 +131,47 @@
           <div class="box">
             <h2>Site Control</h2>
           </div>
-          <div class="box">
-            <h2>Site Control</h2>
+          <!-- Start Backup Manager -->
+          <div class="box backup-manager">
+            <h2>Backup Manager</h2>
+            <p>Control Backup Time And Location</p>
+            <div class="date">
+              <input type="radio" name="time" id="daily" />
+              <label for="daily">Daily</label>
+            </div>
+            <div class="date">
+              <input type="radio" name="time" id="weekly" />
+              <label for="weekly">Weekly</label>
+            </div>
+            <div class="date">
+              <input type="radio" name="time" id="monthly" />
+              <label for="monthly">Monthly</label>
+            </div>
+            <div class="server-type">
+              <div class="server">
+                <input type="radio" name="server" id="megaman" />
+                <label for="megaman">
+                  <i class="fa-solid fa-server d-block mb-10"></i>
+                  Megaman
+                </label>
+              </div>
+              <div class="server">
+                <input type="radio" name="server" id="zero" />
+                <label for="zero">
+                  <i class="fa-solid fa-server d-block mb-10"></i>
+                  Zero
+                </label>
+              </div>
+              <div class="server">
+                <input type="radio" name="server" id="sigma" />
+                <label for="sigma">
+                  <i class="fa-solid fa-server d-block mb-10"></i>
+                  Sigma
+                </label>
+              </div>
+            </div>
           </div>
-          <div class="box">
-            <h2>Site Control</h2>
-          </div>
+          <!-- End Backup Manager -->
         </div>
       </div>
     </div>
