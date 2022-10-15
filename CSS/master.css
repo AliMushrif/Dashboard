@@ -1120,12 +1120,18 @@ body {
   .settings-content {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     padding: 5px;
+    gap: 5px;
   }
 }
 .settings-content .box {
   background-color: var(--white-color);
   padding: 20px;
   border-radius: var(--border-raduis);
+}
+@media (max-width: 767px) {
+  .settings-content .box {
+    padding: 10px;
+  }
 }
 .settings-content .box h2 {
   font-size: 26px;
