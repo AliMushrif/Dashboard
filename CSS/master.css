@@ -1031,6 +1031,54 @@ body {
 
 /* End Social Media Stats */
 
+/* Start General Info */
+
+.general-info {
+  display: flex;
+  flex-direction: column;
+}
+.general-info > input {
+  margin-bottom: 20px;
+}
+.general-info .ch {
+  display: flex;
+  align-items: center;
+}
+.general-info .ch input {
+  flex: 1;
+  cursor: no-drop;
+}
+.general-info input::placeholder {
+  color: #bbb;
+  font-size: 12px;
+}
+.general-info .ch input:disabled {
+  background-color: #f0f4f8;
+}
+.general-info .ch .change {
+  margin: 0 10px;
+  color: var(--blue-color);
+  font-weight: 500;
+}
+.general-info p {
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+.general-info label {
+  color: var(--text-color);
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+input {
+  color: var(--text-color);
+  margin-bottom: 20px;
+  padding: 6px;
+  border-radius: var(--border-raduis);
+  border: 1px solid #ccc;
+}
+
+/* End General Info */
+
 /* Start Table Project */
 
 .table-container {
