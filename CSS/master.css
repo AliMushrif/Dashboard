@@ -1031,54 +1031,6 @@ body {
 
 /* End Social Media Stats */
 
-/* Start General Info */
-
-.general-info {
-  display: flex;
-  flex-direction: column;
-}
-.general-info > input {
-  margin-bottom: 20px;
-}
-.general-info .ch {
-  display: flex;
-  align-items: center;
-}
-.general-info .ch input {
-  flex: 1;
-  cursor: no-drop;
-}
-.general-info input::placeholder {
-  color: #bbb;
-  font-size: 12px;
-}
-.general-info .ch input:disabled {
-  background-color: #f0f4f8;
-}
-.general-info .ch .change {
-  margin: 0 10px;
-  color: var(--blue-color);
-  font-weight: 500;
-}
-.general-info p {
-  color: var(--text-color);
-  margin-bottom: 20px;
-}
-.general-info label {
-  color: var(--text-color);
-  margin-bottom: 10px;
-  font-weight: 500;
-}
-input {
-  color: var(--text-color);
-  margin-bottom: 20px;
-  padding: 6px;
-  border-radius: var(--border-raduis);
-  border: 1px solid #ccc;
-}
-
-/* End General Info */
-
 /* Start Table Project */
 
 .table-container {
@@ -1267,6 +1219,155 @@ input {
 /* End Toggle //////////////////////////////////// Bottom */
 
 /* End Site Control */
+
+/* Start General Info */
+
+.general-info {
+  display: flex;
+  flex-direction: column;
+}
+.general-info > input {
+  margin-bottom: 20px;
+}
+.general-info .ch {
+  display: flex;
+  align-items: center;
+}
+.general-info .ch input {
+  flex: 1;
+  cursor: no-drop;
+}
+.general-info input::placeholder {
+  color: #bbb;
+  font-size: 12px;
+}
+.general-info .ch input:disabled {
+  background-color: #f0f4f8;
+}
+.general-info .ch .change {
+  margin: 0 10px;
+  color: var(--blue-color);
+  font-weight: 500;
+}
+.general-info p {
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+.general-info label {
+  color: var(--text-color);
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+input {
+  color: var(--text-color);
+  margin-bottom: 20px;
+  padding: 6px;
+  border-radius: var(--border-raduis);
+  border: 1px solid #ccc;
+}
+
+/* End General Info */
+
+/* Start Security Info */
+
+.security-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.security-info p {
+  color: var(--text-color);
+}
+.security-info > p {
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+.security-info .text h3 {
+  font-weight: 500;
+  font-size: 16px;
+}
+.security-info .text p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.security-info .sub-boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.security-info .sub-boxes:last-child .btn {
+  margin-right: 6px;
+}
+.security-info .sub-boxes:not(:last-child) {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+.security-info .btn .change {
+  background-color: var(--blue-color);
+  border: none;
+  border-radius: var(--border-raduis);
+  padding: 5px 8px;
+  color: var(--white-color);
+  font-weight: 500;
+  cursor: pointer;
+}
+.security-info .btn .change:hover {
+  background-color: var(--blue-alt-color);
+}
+.security-info .btn .devices {
+  background-color: #eee;
+  border: none;
+  border-radius: var(--border-raduis);
+  padding: 5px 8px;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+}
+.security-info .btn .devices:hover {
+  background-color: rgb(228, 228, 228);
+}
+.security-info .toggle-checkbox {
+  --webkit-appearance: none;
+  appearance: none;
+}
+.security-info .toggle-switch {
+  width: 60px;
+  height: 26px;
+  background-color: #ccc;
+  position: relative;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 5px;
+  transition: var(--transition);
+}
+.security-info .toggle-switch::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00d";
+  font-weight: 900;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+  transition: var(--transition);
+}
+.security-info .toggle-checkbox:checked ~ .toggle-switch {
+  background-color: var(--blue-color);
+}
+.security-info .toggle-checkbox:checked ~ .toggle-switch::before {
+  content: "\f00c";
+  left: 36px;
+}
+
+/* End Security Info */
 
 /* Start backup-manager */
 
