@@ -2227,6 +2227,146 @@ input {
 
 /* Start Files */
 
+.main-container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+  padding: 20px;
+}
+.main-container .file-statistics {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-color);
+  border-radius: var(--border-raduis);
+  padding: 20px;
+  width: 260px;
+  height: fit-content;
+}
+.main-container .file-statistics h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.main-container .file-statistics .sub-box {
+  display: flex;
+  border: 1px solid #eee;
+  margin: 5px 0;
+  border-radius: var(--border-raduis);
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-container .file-statistics .sub-box > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main-container .file-statistics .sub-box i {
+  width: 40px;
+  height: 40px;
+  background-color: #0075ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  border-radius: 2px;
+}
+.main-container .file-statistics .sub-box .text {
+  display: flex;
+  flex-direction: column;
+}
+.main-container .file-statistics .sub-box .text span:first-child {
+  color: black;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.main-container .file-statistics .sub-box .text span:last-child {
+  color: var(--text-color);
+  font-size: 12px;
+}
+.main-container .file-statistics .sub-box span:last-child {
+  color: var(--text-color);
+  font-size: 12px;
+}
+.main-container .file-statistics a {
+  background-color: var(--blue-color);
+  padding: 10px 15px;
+  margin: 12px auto;
+  border-radius: var(--border-raduis);
+  color: var(--white-color);
+  font-size: 12px;
+}
+.main-container .file-statistics a i {
+  margin-right: 5px;
+}
+.main-container .file-statistics a:hover i {
+  position: relative;
+  animation: moving-up-down 0.8s infinite;
+}
+.main-container .files {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+.main-container .files .sub-box {
+  background-color: var(--white-color);
+  border-radius: var(--border-raduis);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.main-container .files .sub-box > i:first-child {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-size: 14px;
+  color: var(--text-color);
+}
+.main-container .files .sub-box img {
+  width: 60px;
+  transition: var(--transition);
+  margin: 10px 0;
+}
+.main-container .files .sub-box:hover img {
+  transform: rotateZ(6deg);
+}
+.main-container .files .sub-box p {
+  font-size: 14px;
+}
+.main-container .files .sub-box .position {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 12px;
+  margin: 10px;
+  color: var(--text-color);
+}
+.main-container .files .sub-box .end {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--text-color);
+  border-top: 1px solid #eee;
+  padding: 10px 0 0;
+}
+@media (max-width: 767px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+  }
+  .main-container .file-statistics {
+    width: 100%;
+  }
+  .main-container .files {
+    gap: 5px;
+  }
+}
 /* End Files */
 
 /* Start Animation */
@@ -2239,6 +2379,15 @@ input {
   45%,
   55% {
     background-color: var(--white-color);
+  }
+}
+@keyframes moving-up-down {
+  0%,
+  100% {
+    top: 4px;
+  }
+  50% {
+    top: -4px;
   }
 }
 
