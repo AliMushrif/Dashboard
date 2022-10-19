@@ -1890,26 +1890,26 @@ input {
 
 /* Start Projects */
 
-.boxes-container {
+.boxes-container-projects {
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 20px;
 }
 @media (max-width: 991px) {
-  .boxes-container {
+  .boxes-container-projects {
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   }
 }
 @media (max-width: 767px) {
-  .boxes-container {
+  .boxes-container-projects {
     padding: 5px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 5px;
   }
 }
-.boxes-container .sub-box {
+.boxes-container-projects .sub-box {
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -1928,7 +1928,7 @@ input {
   font-weight: 500;
   margin-bottom: 40px;
 }
-.boxes-container .sub-box .img-div > span {
+.boxes-container-projects .sub-box .img-div > span {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -1936,32 +1936,32 @@ input {
   font-weight: 500;
   color: var(--text-color);
 }
-.boxes-container .sub-box .img-div ul {
+.boxes-container-projects .sub-box .img-div ul {
   display: flex;
   margin: 20px 0;
 }
-.boxes-container .sub-box .img-div ul li img {
+.boxes-container-projects .sub-box .img-div ul li img {
   width: 40px;
   border-radius: 50%;
   border: 2px solid #eee;
   cursor: pointer;
 }
-.boxes-container .sub-box .img-div ul li {
+.boxes-container-projects .sub-box .img-div ul li {
   transition: var(--transition);
 }
-.boxes-container .sub-box .img-div ul li:hover {
+.boxes-container-projects .sub-box .img-div ul li:hover {
   z-index: 3;
 }
-.boxes-container .sub-box .img-div ul li:not(:first-child) {
+.boxes-container-projects .sub-box .img-div ul li:not(:first-child) {
   margin-left: -15px;
 }
-.boxes-container .sub-box .skills {
+.boxes-container-projects .sub-box .skills {
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
   display: flex;
   justify-content: flex-end;
 }
-.boxes-container .sub-box .skills span {
+.boxes-container-projects .sub-box .skills span {
   font-size: 14px;
   font-weight: 500;
   padding: 5px 8px;
@@ -1970,76 +1970,76 @@ input {
   margin: 15px 5px;
 }
 @media (max-width: 767px) {
-  .boxes-container .sub-box .skills {
+  .boxes-container-projects .sub-box .skills {
     display: flex;
     flex-direction: column;
     padding: 5px 0;
   }
-  .boxes-container .sub-box .skills span {
+  .boxes-container-projects .sub-box .skills span {
     margin: 5px 0;
     width: fit-content;
   }
 }
-.boxes-container .sub-box .accabtince {
+.boxes-container-projects .sub-box .accabtince {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 20px 0 10px;
 }
-.boxes-container .sub-box .accabtince .holder {
+.boxes-container-projects .sub-box .accabtince .holder {
   width: 250px;
   height: 6px;
   background-color: #eee;
   border-radius: var(--border-raduis);
   position: relative;
 }
-.boxes-container .sub-box .accabtince .holder span {
+.boxes-container-projects .sub-box .accabtince .holder span {
   position: absolute;
   top: 0;
   left: 0;
   border-radius: var(--border-raduis);
   height: 6px;
 }
-.boxes-container .sub-box .accabtince .holder .red {
+.boxes-container-projects .sub-box .accabtince .holder .red {
   width: 40%;
   background-color: var(--red-color);
 }
-.boxes-container .sub-box .accabtince .holder .green {
+.boxes-container-projects .sub-box .accabtince .holder .green {
   width: 60%;
   background-color: var(--green-color);
 }
-.boxes-container .sub-box .accabtince .holder .blue {
+.boxes-container-projects .sub-box .accabtince .holder .blue {
   width: 100%;
   background-color: var(--blue-color);
 }
-.boxes-container .sub-box .accabtince .price {
+.boxes-container-projects .sub-box .accabtince .price {
   font-size: 14px;
   font-weight: 500;
   color: var(--text-color);
 }
-.boxes-container .sub-box .accabtince .price {
+.boxes-container-projects .sub-box .accabtince .price {
 }
 
 /* End Projects */
 
 /* Start Courses */
 
-.boxes-countanier {
+.boxes-countanier-courses {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px;
 }
-.boxes-countanier .sub-box {
+.boxes-countanier-courses .sub-box {
   position: relative;
   background-color: var(--white-color);
   border-radius: var(--border-raduis);
   overflow: hidden;
 }
-.boxes-countanier .sub-box .course {
+.boxes-countanier-courses .sub-box .course {
   width: 100%;
 }
-.boxes-countanier .sub-box .team {
+.boxes-countanier-courses .sub-box .team {
   position: absolute;
   width: 60px;
   padding: 2px;
@@ -2049,33 +2049,33 @@ input {
   left: 20px;
   z-index: 2;
 }
-.boxes-countanier .sub-box .text {
+.boxes-countanier-courses .sub-box .text {
   padding: 20px;
 }
-.boxes-countanier .sub-box .text h3 {
+.boxes-countanier-courses .sub-box .text h3 {
   font-size: 16px;
   margin-bottom: 10px;
 }
-.boxes-countanier .sub-box .text p {
+.boxes-countanier-courses .sub-box .text p {
   font-size: 14px;
   color: var(--text-color);
   line-height: 1.5;
 }
-.boxes-countanier .sub-box .info {
+.boxes-countanier-courses .sub-box .info {
   display: flex;
   justify-content: space-between;
   padding: 20px;
   border-top: 1px solid #eee;
   position: relative;
 }
-.boxes-countanier .sub-box .info i {
+.boxes-countanier-courses .sub-box .info i {
   color: black;
 }
-.boxes-countanier .sub-box .info .person {
+.boxes-countanier-courses .sub-box .info .person {
   font-size: 14px;
   color: var(--text-color);
 }
-.boxes-countanier .sub-box .info .button {
+.boxes-countanier-courses .sub-box .info .button {
   padding: 5px 8px;
   background-color: var(--blue-color);
   color: white;
@@ -2086,12 +2086,12 @@ input {
   left: 50%;
   transform: translateX(-50%);
 }
-.boxes-countanier .sub-box .info .price {
+.boxes-countanier-courses .sub-box .info .price {
   font-size: 14px;
   color: var(--text-color);
 }
 @media (max-width: 767px) {
-  .boxes-countanier {
+  .boxes-countanier-courses {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 5px;
     padding: 5px;
@@ -2099,6 +2099,131 @@ input {
 }
 
 /* End Courses */
+
+/* Start Friends */
+
+.boxes-container-friends {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.boxes-container-friends .sub-box {
+  background-color: var(--white-color);
+  padding: 20px;
+  border-radius: var(--border-raduis);
+  display: flex;
+  flex-direction: column;
+}
+.boxes-container-friends .sub-box .start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 10px;
+  justify-content: space-between;
+}
+.boxes-container-friends .sub-box .start .contact-icon {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+  width: 100%;
+  font-size: 14px;
+  color: var(--text-color);
+}
+.boxes-container-friends .sub-box .start .contact-icon .phone {
+  border-radius: 50%;
+  background-color: #eee;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition);
+}
+.boxes-container-friends .sub-box .start .contact-icon .message {
+  border-radius: 50%;
+  background-color: #eee;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition);
+}
+.boxes-container-friends .sub-box .start .contact-icon .phone:hover,
+.boxes-container-friends .sub-box .start .contact-icon .message:hover {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
+.boxes-container-friends img {
+  width: 100px;
+  border-radius: 50%;
+}
+.boxes-container-friends .sub-box .start > h3 {
+  font-size: 16px;
+}
+.boxes-container-friends .sub-box .start > p {
+  font-size: 14px;
+  color: var(--text-color);
+}
+.boxes-container-friends .sub-box .vip {
+  margin: 10px 0;
+  padding: 15px 0;
+  position: relative;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+.boxes-container-friends .sub-box .vip .icon {
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
+}
+.boxes-container-friends .sub-box .vip > span {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  font-weight: 700;
+  color: rgba(255, 166, 0, 0.381);
+}
+.boxes-container-friends .sub-box .end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.boxes-container-friends .sub-box .end p {
+  flex: 50%;
+  font-size: 14px;
+  color: var(--text-color);
+}
+.boxes-container-friends .sub-box .end a {
+  color: var(--white-color);
+  padding: 3px 5px;
+  border-radius: var(--border-raduis);
+  font-size: 14px;
+  margin: 0 2px;
+}
+.boxes-container-friends .sub-box .end a:first-of-type {
+  background-color: var(--blue-color);
+}
+.boxes-container-friends .sub-box .end a:last-of-type {
+  background-color: var(--red-color);
+}
+@media (max-width: 767px) {
+  .boxes-container-friends {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 5px;
+    padding: 5px;
+  }
+}
+/* End Friends */
 
 /* Start Animation */
 
