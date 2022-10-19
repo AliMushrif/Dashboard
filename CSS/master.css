@@ -2022,6 +2022,84 @@ input {
 
 /* End Projects */
 
+/* Start Courses */
+
+.boxes-countanier {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.boxes-countanier .sub-box {
+  position: relative;
+  background-color: var(--white-color);
+  border-radius: var(--border-raduis);
+  overflow: hidden;
+}
+.boxes-countanier .sub-box .course {
+  width: 100%;
+}
+.boxes-countanier .sub-box .team {
+  position: absolute;
+  width: 60px;
+  padding: 2px;
+  background-color: #eee;
+  border-radius: 50%;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+}
+.boxes-countanier .sub-box .text {
+  padding: 20px;
+}
+.boxes-countanier .sub-box .text h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.boxes-countanier .sub-box .text p {
+  font-size: 14px;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+.boxes-countanier .sub-box .info {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-top: 1px solid #eee;
+  position: relative;
+}
+.boxes-countanier .sub-box .info i {
+  color: black;
+}
+.boxes-countanier .sub-box .info .person {
+  font-size: 14px;
+  color: var(--text-color);
+}
+.boxes-countanier .sub-box .info .button {
+  padding: 5px 8px;
+  background-color: var(--blue-color);
+  color: white;
+  font-size: 14px;
+  border-radius: var(--border-raduis);
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.boxes-countanier .sub-box .info .price {
+  font-size: 14px;
+  color: var(--text-color);
+}
+@media (max-width: 767px) {
+  .boxes-countanier {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 5px;
+    padding: 5px;
+  }
+}
+
+/* End Courses */
+
 /* Start Animation */
 
 @keyframes vibbote {
