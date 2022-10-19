@@ -1888,6 +1888,140 @@ input {
 
 /* End Profile */
 
+/* Start Projects */
+
+.boxes-container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 20px;
+}
+@media (max-width: 991px) {
+  .boxes-container {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  }
+}
+@media (max-width: 767px) {
+  .boxes-container {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 5px;
+  }
+}
+.boxes-container .sub-box {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  border-radius: var(--border-raduis);
+  position: relative;
+}
+.boxes-container .sub-box .img-div h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.boxes-container .sub-box .img-div p {
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.boxes-container .sub-box .img-div > span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+.boxes-container .sub-box .img-div ul {
+  display: flex;
+  margin: 20px 0;
+}
+.boxes-container .sub-box .img-div ul li img {
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #eee;
+  cursor: pointer;
+}
+.boxes-container .sub-box .img-div ul li {
+  transition: var(--transition);
+}
+.boxes-container .sub-box .img-div ul li:hover {
+  z-index: 3;
+}
+.boxes-container .sub-box .img-div ul li:not(:first-child) {
+  margin-left: -15px;
+}
+.boxes-container .sub-box .skills {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: flex-end;
+}
+.boxes-container .sub-box .skills span {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 8px;
+  background-color: #eee;
+  border-radius: var(--border-raduis);
+  margin: 15px 5px;
+}
+@media (max-width: 767px) {
+  .boxes-container .sub-box .skills {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+  }
+  .boxes-container .sub-box .skills span {
+    margin: 5px 0;
+    width: fit-content;
+  }
+}
+.boxes-container .sub-box .accabtince {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 10px;
+}
+.boxes-container .sub-box .accabtince .holder {
+  width: 250px;
+  height: 6px;
+  background-color: #eee;
+  border-radius: var(--border-raduis);
+  position: relative;
+}
+.boxes-container .sub-box .accabtince .holder span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--border-raduis);
+  height: 6px;
+}
+.boxes-container .sub-box .accabtince .holder .red {
+  width: 40%;
+  background-color: var(--red-color);
+}
+.boxes-container .sub-box .accabtince .holder .green {
+  width: 60%;
+  background-color: var(--green-color);
+}
+.boxes-container .sub-box .accabtince .holder .blue {
+  width: 100%;
+  background-color: var(--blue-color);
+}
+.boxes-container .sub-box .accabtince .price {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+.boxes-container .sub-box .accabtince .price {
+}
+
+/* End Projects */
+
 /* Start Animation */
 
 @keyframes vibbote {
