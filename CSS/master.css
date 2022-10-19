@@ -2369,6 +2369,115 @@ input {
 }
 /* End Files */
 
+/* Start Plans */
+
+.plans-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.plans-container .sub-box {
+  background-color: var(--white-color);
+  padding: 20px;
+  border-radius: 10px;
+}
+.plans-container .sub-box .plan {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 20px;
+}
+.plans-container .sub-box .plan div {
+  font-size: 40px;
+  position: relative;
+}
+.plans-container .sub-box .plan div p {
+  margin: 10px;
+}
+.plans-container .sub-box .plan div span {
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+.plans-container .sub-box ul {
+  display: flex;
+  flex-direction: column;
+}
+.plans-container .sub-box ul li {
+  padding: 15px 0;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+}
+.plans-container .sub-box ul li .fa-check {
+  color: var(--green-color);
+}
+.plans-container .sub-box ul li .fa-xmark {
+  color: var(--red-color);
+}
+.plans-container .sub-box ul li i:first-child {
+  margin-right: 15px;
+}
+.plans-container .sub-box ul li i:last-child {
+  margin-left: auto;
+  color: var(--text-color);
+}
+.plans-container .sub-box .green {
+  border: 10px double var(--white-color);
+  background-color: var(--green-color);
+}
+.plans-container .sub-box .blue {
+  border: 10px double var(--white-color);
+  background-color: var(--blue-color);
+}
+.plans-container .sub-box .orange {
+  border: 10px double var(--white-color);
+  background-color: var(--orange-color);
+}
+.plans-container .sub-box .greenb {
+  display: block;
+  width: fit-content;
+  background-color: var(--green-color);
+  padding: 5px 10px;
+  border-radius: var(--border-raduis);
+  color: var(--white-color);
+  font-weight: 500;
+  margin-top: 20px;
+}
+.plans-container .sub-box .blueb {
+  display: block;
+  width: fit-content;
+  background-color: var(--blue-color);
+  padding: 5px 10px;
+  border-radius: var(--border-raduis);
+  color: var(--white-color);
+  font-weight: 500;
+  margin-top: 20px;
+}
+.plans-container .sub-box:last-child > p:last-of-type {
+  margin: 20px auto 10px;
+  width: fit-content;
+  color: var(--text-color);
+}
+@media (max-width: 767px) {
+  .plans-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 5px;
+    padding: 5px;
+  }
+}
+
+/* End Plans */
+
 /* Start Animation */
 
 @keyframes vibbote {
